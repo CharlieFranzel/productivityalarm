@@ -1,0 +1,2 @@
+Number of questions answer correctly 
+Penalty for getting wrong
