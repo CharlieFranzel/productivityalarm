@@ -1,0 +1,10 @@
+What port is SSH located on?
+A
+What port is HTTPS located on?
+C
+Correct C
+C
+Correct D
+D
+Correct E
+E
