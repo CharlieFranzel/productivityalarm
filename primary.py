@@ -33,7 +33,8 @@ def clock():
             t2.start()
 def alarm():
     while True:
-            playsound('alarm.wav')
+        playsound('alarm.wav')
+    
 
 def quiz():
     correct_counter = 0
@@ -49,8 +50,8 @@ def quiz():
         num += 2
     random.shuffle(random_counter)
 
+    t3.start()
     while correct_counter != threshhold:   # Keeps it cuonting until the ammount of correct answers is equal to the number specified in settings
-        t3.start()
         random_num = random.choice(random_counter)
         if random_num == cache:
             continue
