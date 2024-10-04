@@ -1,2 +1,3 @@
 Number of questions answer correctly 
 Penalty for getting wrong
+How many minutes until auto shut off
