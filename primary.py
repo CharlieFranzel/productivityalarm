@@ -33,13 +33,12 @@ def clock():
             playing = 1
             t2.start()
         
-stop_threads = False
 def alarm():
     while True:
         playsound('alarm.wav')
         global stop_threads
-        if stop_threads:
-            break
+        break
+stop_threads = False
 
 def quiz():
     correct_counter = 0
