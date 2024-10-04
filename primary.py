@@ -28,13 +28,18 @@ def clock():
             current = (str(hour)+':'+'0'+str(minute))
         else:
             current = (str(hour)+':'+str(minute))
+        print(current)
         if current == '6:00':
             playing = 1
             t2.start()
+        
+stop_threads = False
 def alarm():
     while True:
         playsound('alarm.wav')
-    
+        global stop_threads
+        if stop_threads:
+            break
 
 def quiz():
     correct_counter = 0
@@ -77,9 +82,11 @@ def quiz():
         if question_counter >= len(linesQ):    # Prevents list from going out of range
             question_counter = 0
             options_counter = 0
+    stop_threads = True
     t3.join()    
+    print('aaa')
     t1.join()
-
+    print('bbbb')
 t2 = threading.Thread(target=quiz)
 t1 = threading.Thread(target=clock)
 t3 = threading.Thread(target=alarm)
