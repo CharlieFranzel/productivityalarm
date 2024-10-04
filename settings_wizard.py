@@ -1,5 +1,5 @@
 
-create = open('settings.txt','a')  # Creates the sttings file
+create = open('settings.txt','a')  # Creates the settings file if it doesn't exist
 settings = open("settings.txt", "a")
 
 with open('settings.txt', 'w') as file: # This clears all old contents
